@@ -2,6 +2,11 @@ package storage
 
 import "sync"
 
+type Car struct {
+	ID int `json:"id"`
+	// Add other fields for car details
+}
+
 type Database struct {
 	sync.Mutex
 	Cars []Car
